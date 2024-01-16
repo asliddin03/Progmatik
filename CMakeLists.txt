@@ -8,7 +8,7 @@ add_compile_options(-pedantic -Werror -Wextra -fsanitize=address -fsanitize=unde
 add_link_options(-pedantic -Werror -Wextra -fsanitize=address -fsanitize=undefined -std=c++17)
 
 enable_testing()
-add_executable(${TASK_NAME} expressions.cpp expressions.hpp)
+add_executable(${TASK_NAME} src/expressions.cpp src/expressions.hpp)
 
 target_link_libraries(${TASK_NAME} Threads::Threads ${GTEST_LIBRARIES} ${GMOCK_BOTH_LIBRARIES})
 
