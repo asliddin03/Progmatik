@@ -1,4 +1,4 @@
-#include "expressions.hpp"
+#include "expression.h"
 
 void Expressions::Print() {
   if (variants_[ans_] == 0) {
@@ -53,10 +53,4 @@ void Expressions::Solve() {
       return;
     }
   }
-}
-
-int main() {
-  Expressions expressions;
-  expressions.Solve();
-  return 0;
 }
